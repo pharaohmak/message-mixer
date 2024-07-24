@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Encoder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Super Encoder</h1>
+        <textarea id="inputText" placeholder="Enter your message here..."></textarea>
+        <div class="options">
+            <label for="encryptionType">Choose encryption type:</label>
+            <select id="encryptionType">
+                <option value="caesar">Caesar Cipher</option>
+                <option value="symbol">Symbol Cipher</option>
+                <option value="reverse">Reverse Cipher</option>
+            </select>
+            <input type="number" id="caesarAmount" placeholder="Caesar Shift Amount" />
+        </div>
+        <button id="encodeButton">Encode</button>
+        <button id="decodeButton">Decode</button>
+        <div id="results">
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
